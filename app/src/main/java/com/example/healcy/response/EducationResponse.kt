@@ -5,14 +5,17 @@ import com.example.healcy.data.User
 import com.google.gson.annotations.SerializedName
 
 data class EducationResponse(
-    @field:SerializedName("listData")
-    val listData: List<Education>,
+//    @field:SerializedName("listData")
+//    val listData: List<DataArticle>,
 
     @field:SerializedName("error")
     val error: Boolean,
 
     @field:SerializedName("message")
-    val message: String
+    val message: String,
+
+    @field:SerializedName("id")
+    val id: String
 )
 
 data class DataArticle(

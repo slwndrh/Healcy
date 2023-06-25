@@ -34,7 +34,7 @@ import retrofit2.Response
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private lateinit var viewModel: MainViewModel
+//    private lateinit var viewModel: MainViewModel
     private lateinit var pref: UserPreference
 
     private val REQUEST_CODE_EDUCATION = 1
@@ -50,9 +50,9 @@ class MainActivity : AppCompatActivity() {
         pref = UserPreference(this)
 
         setMenu()
-        getToken()
+//        getToken()
         setValid()
-        setViewModel()
+//        setViewModel()
         setTheme()
     }
 
@@ -68,16 +68,16 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun getToken() {
-        val token = pref.getUser().token
-        val client = ApiConfig().getApiService().getUser(token)
-        client.enqueue(object : Callback<UserResponse> {
-            override fun onResponse(call: Call<UserResponse>, response: Response<UserResponse>) {
-            }
-            override fun onFailure(call: Call<UserResponse>, t: Throwable) {
-            }
-        })
-    }
+//    private fun getToken() {
+//        val token = pref.getUser().token
+//        val client = ApiConfig().getApiService().getUser(token)
+//        client.enqueue(object : Callback<UserResponse> {
+//            override fun onResponse(call: Call<UserResponse>, response: Response<UserResponse>) {
+//            }
+//            override fun onFailure(call: Call<UserResponse>, t: Throwable) {
+//            }
+//        })
+//    }
 
     private fun setMenu() {
         binding.cvEducation.setOnClickListener {
@@ -137,13 +137,13 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    private fun setViewModel() {
-        viewModel = ViewModelProvider(this)[MainViewModel::class.java]
-        viewModel.getUser(pref.getUser().token)
-        viewModel.isLoading.observe(this){
-            showLoading(it)
-        }
-    }
+//    private fun setViewModel() {
+//        viewModel = ViewModelProvider(this)[MainViewModel::class.java]
+//        viewModel.getUser(pref.getUser().token)
+//        viewModel.isLoading.observe(this){
+//            showLoading(it)
+//        }
+//    }
 
     private fun setValid() {
         if(!pref.getUser().isLogin){

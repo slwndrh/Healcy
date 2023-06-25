@@ -23,17 +23,18 @@ interface ApiService {
         @Field("password") password: String
     ) : Call<LoginResponse>
 
-    @GET("user")
-    fun getUser(
-        @Header("Authorization") auth: String,
-    ) : Call<UserResponse>
+//    @GET("user")
+//    fun getUser(
+//        @Header("Authorization") auth: String,
+//    ) : Call<UserResponse>
 
     @GET("articles")
     fun getArticle(
-        @Header("Authorization") auth: String,
-//        @Query("linkImage") linkImage:String,
-//        @Query("title") title:String,
-//        @Query("author") author:String,
-//        @Query("content") content:String
+//        @Header("Authorization") token: String,
+        @Query("id") id:String,
+        @Query("linkImage") linkImage:String,
+        @Query("title") title:String,
+        @Query("author") author:String,
+        @Query("content") content:String
     ) : Call<EducationResponse>
 }

@@ -43,11 +43,11 @@ class UserPreference(context: Context) {
 
     fun getArticle(): Education {
         return Education(
+            preferences.getString(EXTRA_ID, "") ?: "",
+            preferences.getString(EXTRA_AUTHOR, "") ?: "",
             preferences.getString(EXTRA_IMAGE, "") ?: "",
             preferences.getString(EXTRA_TITLE, "") ?: "",
-            preferences.getString(EXTRA_AUTHOR, "") ?: "",
-            preferences.getString(EXTRA_CONTENT, "") ?: "",
-            preferences.getString(EXTRA_TOKEN, "") ?: ""
+            preferences.getString(EXTRA_CONTENT, "") ?: ""
         )
     }
 

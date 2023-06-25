@@ -12,6 +12,7 @@ import com.example.healcy.R
 import com.example.healcy.data.Education
 import com.example.healcy.databinding.ItemEducationBinding
 import com.example.healcy.response.DataArticle
+import com.example.healcy.response.EducationResponse
 
 class EducationAdapter(private var listArticle: List<Education>, private val onItemClick: (Education) -> Unit): RecyclerView.Adapter<EducationAdapter.ViewHolder>() {
     @SuppressLint("NotifyDataSetChanged")

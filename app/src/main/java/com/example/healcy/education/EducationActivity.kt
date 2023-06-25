@@ -40,32 +40,32 @@ class EducationActivity : AppCompatActivity() {
         supportActionBar?.title = getString(R.string.education)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        viewModel = ViewModelProvider(this).get(EducationViewModel::class.java)
-        adapter = EducationAdapter(emptyList()) { article ->
-            // Handle item click here
-            val intent = Intent(this, DetailActivity::class.java)
-            intent.putExtra("article_id", article.id)
-            startActivity(intent)
-        }
+//        viewModel = ViewModelProvider(this).get(EducationViewModel::class.java)
+//        adapter = EducationAdapter(emptyList()) { article ->
+//            // Handle item click here
+//            val intent = Intent(this, DetailActivity::class.java)
+//            intent.putExtra("article_id", article.id)
+//            startActivity(intent)
+//        }
+//
+//        binding.rvEducation.layoutManager = LinearLayoutManager(this)
+//        binding.rvEducation.adapter = adapter
 
-        binding.rvEducation.layoutManager = LinearLayoutManager(this)
-        binding.rvEducation.adapter = adapter
-
-        viewModel.isEducation.observe(this, { articles ->
-            articles?.let {
-                adapter.setData(it)
-            }
-        })
-
-        viewModel.getArticle()
+//        viewModel.isEducation.observe(this, { articles ->
+//            articles?.let {
+//                adapter.setData(it)
+//            }
+//        })
+//
+//        viewModel.getArticle()
 
 //        pref = UserPreference(this)
 //
 //        rv = findViewById(R.id.rv_education)
 //        viewModel = ViewModelProvider(this).get(EducationViewModel::class.java)
 //
-//        showRv(listOf())
-//        setViewModel()
+        showRv()
+        setViewModel()
 //        setValid()
 //        getToken()
     }
@@ -109,14 +109,18 @@ class EducationActivity : AppCompatActivity() {
 //        }
 //    }
 //
-//    private fun showRv() {
-//        binding.rvEducation.apply {
-//            layoutManager = LinearLayoutManager(this@EducationActivity)
-//            adapter = EducationAdapter(listOf())
-//            setHasFixedSize(true)
-//        }
-//    }
-//
+    private fun showRv() {
+        adapter = EducationAdapter(emptyList()) { article ->
+            // Handle item click here
+            val intent = Intent(this, DetailActivity::class.java)
+            intent.putExtra("article_id", article.id)
+            startActivity(intent)
+        }
+
+        binding.rvEducation.layoutManager = LinearLayoutManager(this)
+        binding.rvEducation.adapter = adapter
+    }
+
 //    private fun showRv(listStory: List<Education>) {
 //        val layoutManager = LinearLayoutManager(this)
 //        binding.rvEducation.layoutManager = layoutManager
@@ -133,24 +137,25 @@ class EducationActivity : AppCompatActivity() {
 //            }
 //        })
 //    }
-//
-//    private fun setViewModel() {
-//        viewModel = ViewModelProvider(this)[EducationViewModel::class.java]
-//        viewModel.isLoading.observe(this){
-//            showLoading(it)
-//        }
+
+    private fun setViewModel() {
+        viewModel = ViewModelProvider(this)[EducationViewModel::class.java]
+        viewModel.isLoading.observe(this){
+            showLoading(it)
+        }
 //        viewModel.isEducation.observe(this){ articles ->
 //            articles?.let {
-//                adapter.submitList(it)
+//                adapter.setData()
 //            }
 //        }
-//    }
-//
-//    private fun showLoading(isLoading: Boolean) {
-//        if (isLoading){
-//            binding.progressBar.visibility = View.VISIBLE
-//        } else {
-//            binding.progressBar.visibility = View.GONE
-//        }
-//    }
+//        viewModel.getArticle()
+    }
+
+    private fun showLoading(isLoading: Boolean) {
+        if (isLoading){
+            binding.progressBar.visibility = View.VISIBLE
+        } else {
+            binding.progressBar.visibility = View.GONE
+        }
+    }
 }
