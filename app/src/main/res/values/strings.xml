@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Healcy</string>
+    <string name="splash_desc">for your healthy pregnancy!</string>
+
+    <string name="signup_desc">Create your account</string>
+    <string name="image">Image</string>
+    <string name="username">Username</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="password">Password</string>
+    <string name="signup_btn">Signup</string>
+    <string name="signup_message">Signup Success!</string>
+    <string name="login">Welcome to Healcy!</string>
+    <string name="login_desc">Enter your data</string>
+    <string name="login_btn" translatable="false">Login</string>
+    <string name="login_message">Login Success!</string>
+    <string name="login_fail">Login Failed!</string>
+    <string name="token_message">No token found, please login first!</string>
+
+    <string name="message_name">Fill your name please!</string>
+    <string name="message_email">Incorrect email format!</string>
+    <string name="message_password">Passwords must have at least 8 characters!</string>
+
+    <string name="title_add">Login Success!</string>
+    <string name="message_add">Welcome to Healcy</string>
+    <string name="btn_add">Next</string>
+
+    <string name="implementasi">Tool Implementation</string>
+    <string name="education">Education</string>
+    <string name="emergency">Emergency Call</string>
+    <string name="monitoring">Monitoring</string>
+    <string name="hospital_menu">Hospital</string>
+    <string name="home" translatable="false">Home</string>
+
+    <string name="theme">Change Theme</string>
+    <string name="language">Change Language</string>
+    <string name="logout">Logout</string>
+
+    <string name="phone">Phone Number</string>
+    <string name="call">Call</string>
+
+    <string name="hospital">Hospital</string>
+
+    <string name="monitor_mom">Mother Heart Rate</string>
+    <string name="bmp" translatable="false">BMP</string>
+    <string name="monitor_contractions">Uterine Contractions</string>
+    <string name="baseline_value">Baseline Value</string>
+    <string name="fetal_movement">Fetal Movement</string>
+    <string name="ureter_contractions">Ureter Contractions</string>
+    <string name="monitor_temp">Temperature</string>
+    <string name="percent" translatable="false">%</string>
+    <string name="celci" translatable="false">C</string>
+    <string name="rate" translatable="false">00</string>
+
+    <string name="image_education">Image</string>
+    <string name="author">Author</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+
+    <string name="tf_ureter">Ureter Contractions</string>
+    <string name="tf_heart">Heart and Temperature</string>
+    <string name="btn_ureter">Predict</string>
+    <string name="btn_heart">Predict</string>
+
+    <string name="hospital1">Panti Nirmala Hospital</string>
+    <string name="hospital2" translatable="false">RSUD Dr. Saiful Anwar</string>
+    <string name="hospital3">Lavalette Hospital</string>
+    <string name="hospital4">Universitas Brawijaya Hospital</string>
+    <string name="hospital5">Unisma Islamic Hospital</string>
+
+    <string name="number1" translatable="false">0341 – 362459</string>
+    <string name="number2" translatable="false">0341 – 362101</string>
+    <string name="number3" translatable="false">0341 – 470805</string>
+    <string name="number4" translatable="false">0341 – 551311</string>
+    <string name="number5" translatable="false">0341 – 551356</string>
+
+    <string name="age">Enter your age</string>
+    <string name="sistol">Enter your sistol</string>
+    <string name="diastol">Enter your diastol</string>
+    <string name="blood">Enter your blood glucose</string>
+    <string name="temp">Enter your temperature in fahrenheit</string>
+    <string name="heart_rate">Enter your heart rate</string>
+
+    <string name="fetal_move">Enter your fetal movement</string>
+    <string name="contractions">Enter your uterine contractions</string>
+    <string name="fetal_health">Enter your fetal health</string>
+    <string name="title_activity_maps">Hospital</string>
+
+    <string name="light_mode">Light Mode</string>
+    <string name="dark_mode">Dark Mode</string>
+
+    <integer-array name="data_photo">
+        <item>@drawable/satu</item>
+        <item>@drawable/dua</item>
+        <item>@drawable/tiga</item>
+        <item>@drawable/empat</item>
+        <item>@drawable/lima</item>
+        <item>@drawable/enam</item>
+        <item>@drawable/tujuh</item>
+        <item>@drawable/delapan</item>
+        <item>@drawable/sembilan</item>
+    </integer-array>
+</resources>

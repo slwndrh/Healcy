@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "125954619234",
+    "firebase_url": "https://healcy-388714-default-rtdb.firebaseio.com",
+    "project_id": "healcy-388714",
+    "storage_bucket": "healcy-388714.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125954619234:android:5a5f7f987cd09ef3345e3b",
+        "android_client_info": {
+          "package_name": "com.example.healcy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125954619234-50te72n2k3bj0hogs5jeo6f3n9emt9s7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD28_9mkoMkjhyF8dNEjRNHVjvO6xaDBa0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125954619234-50te72n2k3bj0hogs5jeo6f3n9emt9s7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:125954619234:android:56c0d7d40f0a3f81345e3b",
+        "android_client_info": {
+          "package_name": "com.example.kontraksimlapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "125954619234-50te72n2k3bj0hogs5jeo6f3n9emt9s7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD28_9mkoMkjhyF8dNEjRNHVjvO6xaDBa0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "125954619234-50te72n2k3bj0hogs5jeo6f3n9emt9s7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
